@@ -1,12 +1,14 @@
-/* {
+/** {
   border: 3px solid black;
 }
+
 */
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 img {
@@ -21,7 +23,7 @@ img {
 .alignheader {
   display: flex;
   justify-content: space-between;
-  padding: 0px 15%;
+  padding: 10px 25%;
 }
 .logo {
     font-size: 24px;
@@ -48,7 +50,7 @@ a {
 
 .containerone {
     background: #1F2937;
-    padding: 5% 15% ;
+    padding: 5% 25% ;
 }
 
 .alignone {
@@ -57,27 +59,27 @@ a {
 }
 
 .containoneone {
-  max-width: 50%;
+  max-width: 75%;
   display: flex;
   flex-flow: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: flex-start;
   flex-wrap: wrap;
   padding: 8px;
+  flex: 1;
 }
 
 .HeroMain {
   font-size: 48px;
   color: #F9FAF8;
-  font-weight: bolder;
-  max-width: 75%;
+  font-weight:95%;
   margin-bottom: 8px;
 }
 
 .HeroLame {
   font-size: 18px;
   color: #E5E7EB;
-  max-width: 90%;
+  max-width: 95%;
   margin-bottom: 8px;
 }
 
@@ -85,9 +87,16 @@ a {
   background-color: #3882F6;
   color: white;
   border-radius: 8px;
-  padding: 8px;
+  padding: 8px 16px;
   font-weight: bold;
   font-size: 18px;
+}
+
+.imgone {
+  display: block;
+  max-width: 50%;
+  max-height: auto;
+  align-self: flex-end;
 }
 
 .containertwo {
@@ -95,17 +104,10 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 15px;
+    padding: 50px;
     flex: 1;
 }
-.imgone {
-  display: block;
-  max-width: 540px;
-  max-height: 360px;
-  width: 50%;
-  height: auto;
-  align-self: flex-end;
-}
+
 .containtitle {
   font-size: 36px;
   font-weight: 700;
@@ -115,9 +117,9 @@ a {
 .organizedboxes {
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 60px;
   margin-bottom: 40px;
-  }
+}
   
 .item {
   display: flex;
@@ -126,11 +128,19 @@ a {
   width: 200px;
   align-self: flex-start;
 }
+
+.help {
+  padding: 4px;
+  border: 4px #3882F6 solid;
+  border-radius: 20px;
+  background-color: #1F2937;
+}
   
 .text {
   text-align: center;
   width: 150px;
   font-size: 18px;
+  margin: 12px;
   }
   
 .containerthree {
@@ -145,34 +155,79 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 50px;
 }
 .BigQuote {
   font-size: 36px;
   color: #1F2937;
   font-weight: 300;
   font-style: italic;
-  width: 600px;
+  max-width: 800px;
 }
 
 .littlequote {
   align-self: flex-end;
-  font-size: 14px;
-  font-weight: 400;
+  font-size: 24px;
+  font-weight: 500;
 }
 
 .containerfour {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 30px;
+  padding: 5% 25%;
 }
 
 .alignfour {
   display: flex;
-  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3882F6;
+  padding: 25px;
+  width: 100%;
+  border-radius: 10px;
 }
 
 .calltoaction {
   list-style: none;
+  margin-left: 100px;
+  
 }
 
+.signuptwo {
+  background-color: #3882F6;
+  color: white;
+  border: 2px #F9FAF8 solid;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 8px 32px;
+  margin-right: 100px;
+}
+
+.bigcall {
+  font-size: 24px;
+  font-weight: bold;
+  padding: 0px;
+  color: #F9FaF8;
+  flex-shrink: 0;
+}
+
+.littlecall {
+  font-size: 18px;
+  color: #E5E7EB;
+  max-width: 90%;
+  
+}
+
+.containerfive {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-end;
+}
+.footer {
+  color: #F9FAF8 ;
+  background-color: #1F2937;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+}
