@@ -1,23 +1,34 @@
+* {
+  border: 3px solid black;
+  
+}
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     display: flex;
     flex-direction: column;
-    
+}
+
+img {
+  width: 100%;
+  height: 100%;
 }
 
 .header {
     background: #1F2937;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
 }
 
+.alignheader {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 15%;
+}
 .logo {
     font-size: 24px;
     font-weight: bold;
     padding: 8px;
     color: #F9FaF8;
+    flex-shrink: 0;
 }
 
 .links {
@@ -27,6 +38,7 @@ body {
     padding: 8px;
     gap: 16px;
     font-size: 18px;
+    flex-shrink: 0;
 }
 
 a {
@@ -36,47 +48,92 @@ a {
 
 .containerone {
     background: #1F2937;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 25vh;
+    padding: 5% 15% ;
+}
+
+.alignone {
+  display: flex;
+  justify-content: space-between;
 }
 
 .containertwo {
-    background-color: rgb(178, 46, 46);
+    background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 35vh;
+    padding: 15px;
+}
+.containtwotwo {
+  width: 50%;
+  height: 100%;
+}
+.containtitle {
+  font-size: 36px;
+  font-weight: 500;
+  margin: 24px
+}
+  
+.organizedboxes {
+  display: flex;
+  justify-content: center;
+  gap: 0px;
+  margin-bottom: 40px;
+  }
+  
+.item {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  width: 200px;
+  align-self: flex-start;
+  }
+  
+.text {
+  text-align: center;
+  width: 150px;
+  font-size: 12px;
+  }
+  
+.containerthree {
+  display: flex;
+  justify-content: center;
+  background-color: #E5E7EB;
+  padding: 40px;
 }
 
-.containtitle {
-    margin: 32px
+.alignthree {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-img {
-    width: 100px;
-    height: 100px;
-  }
-  
-  .organizedboxes {
-    display: flex;
-    justify-content: center;
-    gap: 0px;
-    margin-bottom: 32px;
-  }
-  
-  .item {
-    display: flex;
-    flex-flow: column;
-    width: 200px;
-    align-self: flex-start;
-  }
-  
-  .text {
-    text-align: center;
-  }
-  
-  img {
-    margin-bottom: auto;
-    align-self: center;  
-  }
+.BigQuote {
+  font-size: 22px;
+  color: #1F2937;
+  font-weight: 300;
+  font-style: italic;
+  width: 600px;
+}
+
+.littlequote {
+  align-self: flex-end;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.containerfour {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.alignfour {
+  display: flex;
+  flex-flow: row;
+}
+
+.calltoaction {
+  list-style: none;
+}
+
