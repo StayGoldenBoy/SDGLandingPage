@@ -1,7 +1,7 @@
-* {
+/* {
   border: 3px solid black;
-  
 }
+*/
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -56,27 +56,66 @@ a {
   justify-content: space-between;
 }
 
+.containoneone {
+  max-width: 50%;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 8px;
+}
+
+.HeroMain {
+  font-size: 48px;
+  color: #F9FAF8;
+  font-weight: bolder;
+  max-width: 75%;
+  margin-bottom: 8px;
+}
+
+.HeroLame {
+  font-size: 18px;
+  color: #E5E7EB;
+  max-width: 90%;
+  margin-bottom: 8px;
+}
+
+.signupone {
+  background-color: #3882F6;
+  color: white;
+  border-radius: 8px;
+  padding: 8px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
 .containertwo {
     background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 15px;
+    flex: 1;
 }
-.containtwotwo {
+.imgone {
+  display: block;
+  max-width: 540px;
+  max-height: 360px;
   width: 50%;
-  height: 100%;
+  height: auto;
+  align-self: flex-end;
 }
 .containtitle {
   font-size: 36px;
-  font-weight: 500;
+  font-weight: 700;
   margin: 24px
 }
   
 .organizedboxes {
   display: flex;
   justify-content: center;
-  gap: 0px;
+  gap: 30px;
   margin-bottom: 40px;
   }
   
@@ -86,12 +125,12 @@ a {
   align-items: center;
   width: 200px;
   align-self: flex-start;
-  }
+}
   
 .text {
   text-align: center;
   width: 150px;
-  font-size: 12px;
+  font-size: 18px;
   }
   
 .containerthree {
@@ -108,7 +147,7 @@ a {
   flex-direction: column;
 }
 .BigQuote {
-  font-size: 22px;
+  font-size: 36px;
   color: #1F2937;
   font-weight: 300;
   font-style: italic;
